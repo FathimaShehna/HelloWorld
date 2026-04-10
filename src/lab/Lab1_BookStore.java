@@ -1,6 +1,6 @@
 package lab;
 
-public class BookStore {
+public class Lab1_BookStore {
 
 	public static void main(String[] args) {
 		
