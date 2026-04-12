@@ -3,7 +3,30 @@ package example;
 public class Example3 {
 
 	public static void main(String[] args) {
-		System.out.println('5'+'6');
+		
+			   
+			      int num1 = 10;
+			      int num2 = 20;
+
+			      num2 = num1;
+			      System.out.println("= Output: "+num2);
+
+			      num2 += num1;
+			      System.out.println("+= Output: "+num2);
+				      
+			      num2 -= num1;
+			      System.out.println("-= Output: "+num2);
+				      
+			      num2 *= num1;
+			      System.out.println("*= Output: "+num2);
+				      
+			      num2 /= num1;
+			      System.out.println("/= Output: "+num2);
+				      
+			      num2 %= num1;
+			      System.out.println("%= Output: "+num2);
+			   
+			
 	}
 
 }
