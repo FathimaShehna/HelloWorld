@@ -9,19 +9,26 @@ import java.util.regex.*;
 		
 		public static void findNum (String message) {
 		
-		Pattern pattern = Pattern.compile("\\d");
+		Pattern pattern = Pattern.compile("\\d{10}");
 		Matcher matcher = pattern.matcher(message);
 		
-		//String[] result = pattern.split(message);
+		boolean found =false;
 		
-		//for(String temp : result)
-			System.out.println(matcher);	
+		while(matcher.find()) {
+			 System.out.println(matcher.group());
+	            found = true;
+		}
+		
+		if(!found) {
+			System.out.println("Matcher not found");
+		}
 	
 	}
+		
 	
 		public static void main(String[] args) {
 			
-			String message = "Hello, My number is 9868567867";
+			String message = "Hello, My number is 9868567867 or 8796567890";
 			findNum (message);
 		}
 
